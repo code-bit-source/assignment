@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: bisque;
+  }
+
+  .navbar {
+    background-color:rgb(87, 31, 23);
+    
+    width: 100%;
+  
+  }
+  .navbar ul{
+    overflow: auto;
+  
+  }
+  .navbar li{
+      size: 75px;
+    color: white;
+    float: left;
+    list-style: none;
+    margin: 13px 20px;
+  }
+  .navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+  }
+  .search{
+    size: 75px;
+    color: white;
+    float: right;
+    padding: 13px 75px;
+    
+  }
+   
+  .navbar input{
+    border: 2px  rgb(83, 83, 83);
+    border-radius: 10px;
+    width: 150px;
+  }
+  
+  .navbar li a:hover{
+    color: rgb(104, 104, 221);
+  
+  }  
+   
+  .container {
+    display: flex;
+    margin-top: 0px; /* Space for the fixed navbar */
+  }
+  
+  .left-menu {
+    font-size: large;
+    size: 50%;
+    width: 10%;
+    background-color: bisque;
+    padding: 10px;
+  }
+  .left-menu button{
+    border-radius: 5px;
+    font-size: x-large;
+    background-color: blue;
+    color: rgb(235, 233, 242);
+    padding: 3px 30px;
+  }
+  .left-menu button:hover{
+    color: #57bcdd;
+  }
+.left-menu li{
+  border-radius: 4px;
+  padding: 10px;
+  background-color: chartreuse;
+}
+.left-menu li a:hover{
+  color: #57bcdd;
+}
+.left-menu li a{
+  color: rgb(6, 6, 6);
+  text-decoration: none;
+}
+  
+  .main-content {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .right-panel {
+    width: 20%;
+    background-color: bisque;
+    padding: 10px;
+  }
+  .right-panel a{
+    text-decoration: none;
+    color: black;
+  }
+  .right-panel a:hover{
+    color: #57bcdd;
+  }
+  
+  footer {
+    background-color: #181414;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  footer li a{
+    text-decoration: none;
+    color: white;
+  }
+  footer li a:hover{
+    color: #57bcdd;
+  }
+  
+  
+  #menu-items {
+    display: block;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .left-menu,
+    .right-panel {
+      width: 100%;
+    }
+  }
+  
